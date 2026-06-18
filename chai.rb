@@ -5,21 +5,21 @@
 class Chai < Formula
   desc "Keep AI coding agent configs in sync"
   homepage "https://github.com/charliesbot/chai"
-  version "0.1.3"
+  version "0.9.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/charliesbot/chai/releases/download/v0.1.3/chai_darwin_amd64.tar.gz"
-      sha256 "11040ea2229f5a7b154bc2fbb2a29da5adbc18347b1f4bb6e6ed571d74bf723a"
+      url "https://github.com/charliesbot/chai/releases/download/v0.9.2/chai_darwin_amd64.tar.gz"
+      sha256 "4e586108b5563a4f0260eee193a0dc12466834f220f79fcaa308283accc5782f"
 
       define_method(:install) do
         bin.install "chai"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/charliesbot/chai/releases/download/v0.1.3/chai_darwin_arm64.tar.gz"
-      sha256 "54249d615453ef8043805e8d511418d0ad3378bffc82f41fc025e0cf2c6a35e4"
+      url "https://github.com/charliesbot/chai/releases/download/v0.9.2/chai_darwin_arm64.tar.gz"
+      sha256 "385b90c79273c4c63f9757431ff0107e7ce6fc53969a3ab81447bffd9968ab23"
 
       define_method(:install) do
         bin.install "chai"
@@ -29,15 +29,15 @@ class Chai < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/charliesbot/chai/releases/download/v0.1.3/chai_linux_amd64.tar.gz"
-      sha256 "488cdc4beb94e804326ebf42c44f840dc27f2666bf45100f35f812cfa143b064"
+      url "https://github.com/charliesbot/chai/releases/download/v0.9.2/chai_linux_amd64.tar.gz"
+      sha256 "ece213afe0c079e7b6fe21438db5e43dae95f47d4fabe020410a86ff60b81328"
       define_method(:install) do
         bin.install "chai"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/charliesbot/chai/releases/download/v0.1.3/chai_linux_arm64.tar.gz"
-      sha256 "bb56b26488de350ac9ea208ad8fcec98920c5ad7e7b70a312c44f278e7da23e9"
+      url "https://github.com/charliesbot/chai/releases/download/v0.9.2/chai_linux_arm64.tar.gz"
+      sha256 "1d90560799058408c7df75f7e9f88d13aaa848d935e1a969559dfe83275e9ab7"
       define_method(:install) do
         bin.install "chai"
       end
